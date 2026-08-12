@@ -1,5 +1,5 @@
 server:
-  secret_key: "4e3c8a2f5d1b7e9a0c6f2d4b8a1e5c9f3a7d2b8e4c6f1a9d3b7e5c8f2a4d6e9"  # generated random
+  secret_key: "259f0f5eef5eeb26cc3e44fddc89e4048813d91d26314fe40a281f05e5d08507"  # generated random
   base_url: "https://searxng-production-7512.up.railway.app"
   
 ui:
