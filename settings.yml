@@ -1,24 +1,116 @@
 server:
-  secret_key: "change-me-to-a-real-secret"  # change this!
-  base_url: "http://localhost:8080"        # change to your public URL
+  secret_key: "4e3c8a2f5d1b7e9a0c6f2d4b8a1e5c9f3a7d2b8e4c6f1a9d3b7e5c8f2a4d6e9"  # generated random
+  base_url: "https://searxng.onrender.com"  # will be auto-updated by Render
+  
+ui:
+  static_use_hash: true
+  theme: simple-dark
+  language: "en"
+  results_on_new_tab: true
+  center_alignment: true
+  advanced_search: true
   
 search:
   safe_search: 0
-  engines:
-    - name: google
-      engine: google
-      shortcut: g
-    - name: duckduckgo
-      engine: duckduckgo
-      shortcut: d
-    - name: bing
-      engine: bing
-      shortcut: b
-    - name: wikipedia
-      engine: wikipedia
-      shortcut: w
-    - name: github
-      engine: github
-      shortcut: gh
+  autocomplete: "google"
+  default_lang: "en"
+  languages:
+    - "en"
+    - "id"
+    - "de"
+    - "fr"
+    - "es"
+  categories:
+    - general
+    - images
+    - videos
+    - news
+    - map
+    - science
+  max_results: 20
+  image_proxy: true
+  
+engines:
+  - name: google
+    engine: google
+    shortcut: g
+    categories: [general]
+    timeout: 3.0
+  
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: d
+    categories: [general]
+    timeout: 3.0
+  
+  - name: bing
+    engine: bing
+    shortcut: b
+    categories: [general, images, videos, news]
+    timeout: 3.0
+  
+  - name: youtube
+    engine: youtube
+    shortcut: yt
+    categories: [videos]
+    timeout: 3.0
+  
+  - name: github
+    engine: github
+    shortcut: gh
+    categories: [general]
+    timeout: 3.0
+  
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: w
+    categories: [general]
+    timeout: 3.0
+  
+  - name: arxiv
+    engine: arxiv
+    shortcut: ar
+    categories: [science]
+    timeout: 5.0
+  
+  - name: reddit
+    engine: reddit
+    shortcut: r
+    categories: [general]
+    timeout: 3.0
+  
+  - name: duckduckgo_images
+    engine: duckduckgo_images
+    shortcut: di
+    categories: [images]
+    timeout: 3.0
+  
+  - name: google_images
+    engine: google_images
+    shortcut: gi
+    categories: [images]
+    timeout: 3.0
+  
+  - name: google_videos
+    engine: google_videos
+    shortcut: gv
+    categories: [videos]
+    timeout: 3.0
+  
+  - name: openstreetmap
+    engine: openstreetmap
+    shortcut: osm
+    categories: [map]
+    timeout: 5.0
 
-use_default_settings: true
+outgoing:
+  request_timeout: 10.0
+  pool_connections: 100
+  pool_maxsize: 100
+  verify: true
+  
+server:
+  limiter: true
+  max_request_time: 10.0
+  
+use_default_settings: false
