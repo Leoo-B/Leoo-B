@@ -1,7 +1,7 @@
 server:
-  secret_key: "259f0f5eef5eeb26cc3e44fddc89e4048813d91d26314fe40a281f05e5d08507"  # generated random
+  secret_key: "259f0f5eef5eeb26cc3e44fddc89e4048813d91d26314fe40a281f05e5d08507"
   base_url: "https://searxng-production-7512.up.railway.app"
-  
+
 ui:
   static_use_hash: true
   theme: simple-dark
@@ -9,10 +9,10 @@ ui:
   results_on_new_tab: true
   center_alignment: true
   advanced_search: true
-  
+
 search:
   safe_search: 0
-  autocomplete: "google"
+  autocomplete: "duckduckgo"
   default_lang: "en"
   languages:
     - "en"
@@ -29,54 +29,44 @@ search:
     - science
   max_results: 20
   image_proxy: true
-  
-engines:
 
-  
+engines:
   - name: duckduckgo
     engine: duckduckgo
     shortcut: d
     categories: [general]
     timeout: 3.0
-  
 
-  
   - name: youtube
     engine: youtube
     shortcut: yt
     categories: [videos]
     timeout: 3.0
-  
 
-  
   - name: wikipedia
     engine: wikipedia
     shortcut: w
     categories: [general]
     timeout: 3.0
-  
+
   - name: arxiv
     engine: arxiv
     shortcut: ar
     categories: [science]
     timeout: 5.0
-  
+
   - name: reddit
     engine: reddit
     shortcut: r
     categories: [general]
     timeout: 3.0
-  
+
   - name: duckduckgo_images
     engine: duckduckgo_images
     shortcut: di
     categories: [images]
     timeout: 3.0
-  
 
-  
-
-  
   - name: openstreetmap
     engine: openstreetmap
     shortcut: osm
@@ -88,9 +78,9 @@ outgoing:
   pool_connections: 100
   pool_maxsize: 100
   verify: true
-  
+
 server:
   limiter: true
   max_request_time: 10.0
-  
+
 use_default_settings: false
