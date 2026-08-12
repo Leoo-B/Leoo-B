@@ -31,11 +31,7 @@ search:
   image_proxy: true
   
 engines:
-  - name: google
-    engine: google
-    shortcut: g
-    categories: [general]
-    timeout: 3.0
+
   
   - name: duckduckgo
     engine: duckduckgo
@@ -43,11 +39,7 @@ engines:
     categories: [general]
     timeout: 3.0
   
-  - name: bing
-    engine: bing
-    shortcut: b
-    categories: [general, images, videos, news]
-    timeout: 3.0
+
   
   - name: youtube
     engine: youtube
@@ -55,11 +47,7 @@ engines:
     categories: [videos]
     timeout: 3.0
   
-  - name: github
-    engine: github
-    shortcut: gh
-    categories: [general]
-    timeout: 3.0
+
   
   - name: wikipedia
     engine: wikipedia
@@ -85,17 +73,9 @@ engines:
     categories: [images]
     timeout: 3.0
   
-  - name: google_images
-    engine: google_images
-    shortcut: gi
-    categories: [images]
-    timeout: 3.0
+
   
-  - name: google_videos
-    engine: google_videos
-    shortcut: gv
-    categories: [videos]
-    timeout: 3.0
+
   
   - name: openstreetmap
     engine: openstreetmap
