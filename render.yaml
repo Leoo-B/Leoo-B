@@ -11,6 +11,6 @@ services:
         fromService:
           name: searxng
           type: web
-          property: url
+          property: host
     healthCheckPath: /
     numInstances: 1
