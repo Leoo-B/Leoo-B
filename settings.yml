@@ -85,8 +85,11 @@ outgoing:
   verify: true
 
 server:
-  limiter: true
+  limiter: false
   max_request_time: 10.0
+
+botdetection:
+  enabled: false
 
 use_default_settings: true
 
