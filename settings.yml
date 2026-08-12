@@ -18,6 +18,7 @@ search:
     - html
     - json
     - rss
+  public_access: true
   languages:
     - "en"
     - "id"
