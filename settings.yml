@@ -1,6 +1,6 @@
 server:
   secret_key: "4e3c8a2f5d1b7e9a0c6f2d4b8a1e5c9f3a7d2b8e4c6f1a9d3b7e5c8f2a4d6e9"  # generated random
-  base_url: "https://searxng.onrender.com"  # will be auto-updated by Render
+  base_url: "https://searxng-production-7512.up.railway.app"
   
 ui:
   static_use_hash: true
