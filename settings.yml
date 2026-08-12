@@ -84,3 +84,83 @@ server:
   max_request_time: 10.0
 
 use_default_settings: false
+
+# extra engines (no API key)
+engines_extra:
+  - name: brave
+    engine: brave
+    shortcut: br
+    categories: [general]
+    timeout: 3.0
+  - name: startpage
+    engine: startpage
+    shortcut: sp
+    categories: [general]
+    timeout: 3.0
+  - name: qwant
+    engine: qwant
+    shortcut: qw
+    categories: [general]
+    timeout: 3.0
+  - name: mojeek
+    engine: mojeek
+    shortcut: mj
+    categories: [general]
+    timeout: 3.0
+  - name: piped
+    engine: piped
+    shortcut: pi
+    categories: [videos]
+    timeout: 3.0
+  - name: invidious
+    engine: invidious
+    shortcut: iv
+    categories: [videos]
+    timeout: 3.0
+  - name: stackoverflow
+    engine: stackoverflow
+    shortcut: so
+    categories: [general]
+    timeout: 3.0
+  - name: npm
+    engine: npm
+    shortcut: np
+    categories: [general]
+    timeout: 3.0
+  - name: pypi
+    engine: pypi
+    shortcut: py
+    categories: [general]
+    timeout: 3.0
+  - name: archwiki
+    engine: archwiki
+    shortcut: aw
+    categories: [general]
+    timeout: 3.0
+  - name: gentoo_wiki
+    engine: gentoo_wiki
+    shortcut: gw
+    categories: [general]
+    timeout: 3.0
+  - name: dictzone
+    engine: dictzone
+    shortcut: dz
+    categories: [general]
+    timeout: 3.0
+  - name: lingva
+    engine: lingva
+    shortcut: lv
+    categories: [general]
+    timeout: 3.0
+
+# plugins
+plugins:
+  tracker_url_remover: true
+  hash_plugin: true
+  self_info: true
+  hostname_replace: true
+
+# UI tweaks
+ui:
+  infinite_scroll: true
+  query_in_title: true
