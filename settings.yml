@@ -88,7 +88,7 @@ server:
   limiter: true
   max_request_time: 10.0
 
-use_default_settings: false
+use_default_settings: true
 
 # extra engines (no API key)
 engines_extra:
