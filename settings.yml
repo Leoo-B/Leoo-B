@@ -1,0 +1,24 @@
+server:
+  secret_key: "change-me-to-a-real-secret"  # change this!
+  base_url: "http://localhost:8080"        # change to your public URL
+  
+search:
+  safe_search: 0
+  engines:
+    - name: google
+      engine: google
+      shortcut: g
+    - name: duckduckgo
+      engine: duckduckgo
+      shortcut: d
+    - name: bing
+      engine: bing
+      shortcut: b
+    - name: wikipedia
+      engine: wikipedia
+      shortcut: w
+    - name: github
+      engine: github
+      shortcut: gh
+
+use_default_settings: true

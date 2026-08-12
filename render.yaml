@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: searxng
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: SEARXNG_SECRET_KEY
+        generateValue: true
+      - key: SEARXNG_BASE_URL
+        fromService:
+          name: searxng
+          type: web
+          property: url
+    healthCheckPath: /
+    numInstances: 1
